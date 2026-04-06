@@ -44,7 +44,7 @@ function Set-GoDaddyRecords(
 }
 
 try {
-    $dataPath = Join-Path -Path $PSScriptRoot -ChildPath 'ddns-vpn.davidbrowning.com.psd1'
+    $dataPath = Join-Path -Path $PSScriptRoot -ChildPath 'ddns.psd1'
     $config = Import-PowerShellDataFile $dataPath
 
     $currentIP = Get-PublicIP
