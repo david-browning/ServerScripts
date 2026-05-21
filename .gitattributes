@@ -1,0 +1,27 @@
+# Default: let Git normalize text files to LF in the repo.
+* text=auto
+
+# Shell scripts must use LF, or Linux will complain.
+*.sh text eol=lf
+
+# Optional: other Unix-y script/config files.
+*.bash text eol=lf
+*.zsh text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Common config/source files that are safest as LF.
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Binary files: never line-ending normalize.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
